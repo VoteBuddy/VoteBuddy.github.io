@@ -27,50 +27,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
 
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-</style>
 </head>
 
 <body>
@@ -80,7 +37,7 @@
       <img class="img-responsive img-border img-center" src="img/logo (2).png" alt="">
       <hr>
       <hr>
-      <img class="img-center" src="welcome.png" alt="">
+      <img class="img-center" src="img/welcome.png" alt="">
       <hr>
     </div>
     <div class="address-bar">Be an Informed Voter</div>
@@ -101,33 +58,33 @@
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
+                <div class="nav navbar-nav">
+                    <!--<li>-->
                         <a href="index.html">Home</a>
-                    </li>
+                    <!--</li>-->
                     <div class="dropdown">
-                        <button class="dropbtn">Candidate Information
-                          <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                          <a href="pres.html">Presidential</a>
-                          <a href="state.html">State</a>
-                          <a href="local.html">Local</a>
-                        </div>
-
-                    <li>
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Candidate Information
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="pres.html">National</a>
+                        <a class="dropdown-item" href="state.html">State</a>
+                        <a class="dropdown-item" href="local.html">Local</a>
+                      </div>
+                    </div>
+                    <!--<li>
                         <a href="learn.html">Candidate Information</a>
-                    </li>
-                    <li>
+                    </li>-->
+                    <!--<li>-->
                         <a href="issues.html">Issues that Matter</a>
-                    </li>
-                    <li>
+                    <!--</li>-->
+                    <!--<li>-->
                         <a href="locations.html">Find Polling Locations</a>
-                    </li>
-                    <li>
+                    <!--</li>-->
+                    <!--<li>-->
                         <a href="about.html">About</a>
-                    </li>
-                </ul>
+                    <!--</li>-->
+                </div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
