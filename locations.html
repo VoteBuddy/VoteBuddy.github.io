@@ -75,7 +75,25 @@
     </nav>
 
     <div class="container">
+      <!--Script for rendering the vote.ca modal pop up and its styles. Please include these links in your page.-->
+      <link rel="stylesheet" href='http://vote.ca/static/css/widget-styles.css'></link>
+      <script type="text/javascript" src="http://vote.ca/static/js/widget-script.js"></script>
 
+      <!--The actual HTML content to be integrated to the website.
+      You can customize the width/height or styles, but do not remove any classes starting with 'vote-ca'.
+      These classes have events attached to them. Also make sure that you have never used these classes anywhere
+      in your site.
+        Click-event on 'vote-ca-widget-button' class attaches the modal pop to the body tag of your page.
+      -->
+
+      <div class="vote-ca-widget-container-wrapper">
+        <div class="vote-ca-widget-logo-area">
+          <img src="http://vote.ca/static/img/logo.png" />
+        </div>
+        <div class="vote-ca-widget-button-container">
+          <div class="vote-ca-widget-button"><text>Find where to vote</text></div>
+        </div>
+      </div>
         <div class="row">
             <div class="box">
                 <div class="col-lg-12">
